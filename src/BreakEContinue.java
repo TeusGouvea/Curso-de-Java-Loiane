@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class BreakEContinue {
 
     public static void main(String[] args) {
