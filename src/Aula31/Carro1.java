@@ -2,19 +2,20 @@ package Aula31;
 
 public class Carro1 {
 
+
     String marca;
     String modelo;
     int numPassageiros;
     double capCombustivel;
-    double consumoCombustivel;
+    private double consumoCombustivel;
 
-    void exibirAutonomia(){
+    public void exibirAutonomia(){
 
         System.out.println("A autonomia do carro é de: " + this.capCombustivel * this.consumoCombustivel + " km.");
 
     }
 
-    double obterAutonomia(){
+    public double obterAutonomia(){
 
         System.out.println("Método obterAutonomia foi chamado.");
 
@@ -24,7 +25,11 @@ public class Carro1 {
 
     }
 
-    double calcularCombustivel(double km) {
+    private double divideKmPorConsumoCombustivel(double km){
+        return km/this.capCombustivel;
+    }
+
+    public double calcularCombustivel(double km) {
 
         double qtdCombustivel = km /this.consumoCombustivel;
 
