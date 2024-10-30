@@ -6,8 +6,13 @@ public class TesteCalculadora {
 
         MinhaCalculadora calc = new MinhaCalculadora();
 
-        calc.soma(1, 2);
-        calc.soma(1.0, 2.0);
+        int soma1 = calc.soma(1, 2);
+
+        System.out.println(soma1);
+        
+        int soma2 = calc.soma(1, 2, 3);
+
+        System.out.println(soma2);
 
     }
 
